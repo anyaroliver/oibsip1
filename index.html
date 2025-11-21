@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Haven</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #f2ad19;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      background: #4a6cf7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hotel Kingfigure</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Rooms</a>
+      <a href="#contact">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home" style="background:url('https://images.unsplash.com/photo-1501117716987-c8e1ecb210ff?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; color:rgb(66, 146, 186); text-shadow:0 2px 4px rgba(0,0,0,0.6);">
+    <h1 style="font-size:3rem; color:rgb(60, 126, 126);">Experience Luxury & Comfort</h1>
+    <p style="max-width:700px; font-size:1.2rem;">
+      Welcome to Hotel Haven, where elegance meets relaxation. Enjoy our world-class services, premium rooms, and breathtaking views tailored for your perfect stay.
+    </p>
+    <button style="background:#ffcc00; color:#333; font-weight:bold;">Explore Rooms</button>
+</section>
+
+
+  <section class="features" id="features">
+    <div class="feature-box">
+      <img src="room.jpg" alt="Luxury Hotel Room" style="width:100%; border-radius:8px; margin-bottom:15px;">
+      <h3>Elegant Rooms</h3>
+      <p>Stay in beautifully designed rooms with premium amenities and stunning decor.</p>
+    </div>
+    <div class="feature-box">
+      <img src="dining.jpg" alt="Hotel Dining" style="width:100%; border-radius:8px; margin-bottom:15px;">
+      <h3>Fine Dining</h3>
+      <p>Enjoy gourmet meals crafted by top chefs in our world-class restaurants.</p>
+    </div>
+    <div class="feature-box">
+      <img src="relax.jpg" alt="Hotel Spa" style="width:100%; border-radius:8px; margin-bottom:15px;">
+      <h3>Relax & Refresh</h3>
+      <p>Unwind in our spa, pool, and fitness areas designed for complete comfort.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hotel Haven. Your comfort, our priority.</p>
+  </footer>
+</body>
+</html>
